@@ -7,28 +7,28 @@
 public class Main {    
 
     // Declaring variables
-    static String firstRow;
-    static String secondRow;
-    static String thirdRow;
-    static String pos00 = "   ";
-    static String pos01 = "   ";
-    static String pos02 = "   ";
-    static String pos10 = "   ";
-    static String pos11 = "   ";
-    static String pos12 = "   ";
-    static String pos20 = "   ";
-    static String pos21 = "   ";
-    static String pos22 = "   ";
+    private static String firstRow;
+    private static String secondRow;
+    private static String thirdRow;
+    private static String pos00 = "   ";
+    private static String pos01 = "   ";
+    private static String pos02 = "   ";
+    private static String pos10 = "   ";
+    private static String pos11 = "   ";
+    private static String pos12 = "   ";
+    private static String pos20 = "   ";
+    private static String pos21 = "   ";
+    private static String pos22 = "   ";
     
     // Setting the final strings for output.
-    final static String POS_MARKER = "███";
-    final static String TABLE_TITLE = "          Item table";
-    final static String COLUMN_INDEX_POINTERS = "           i-0            i-1        i-2";
-    final static String COLUMN_SPECIFIERS = "          | ITEM NUMBER | QUANTITY | PRICE |";
-    final static String HORIZONTAL_LINE = "          ----------------------------------";
+    private final static String POS_MARKER = "███";
+    private final static String TABLE_TITLE = "          Item table";
+    private final static String COLUMN_INDEX_POINTERS = "           i-0            i-1        i-2";
+    private final static String COLUMN_SPECIFIERS = "          | ITEM NUMBER | QUANTITY | PRICE |";
+    private final static String HORIZONTAL_LINE = "          ----------------------------------";
 
     // Declaring a 2-dimensional array.
-    final static String[][] ITEM_TABLE = new String[][] {
+    private final static String[][] ITEM_TABLE = new String[][] {
         {pos00, pos01, pos02},
         {pos10, pos11, pos12},
         {pos20, pos21, pos22}
