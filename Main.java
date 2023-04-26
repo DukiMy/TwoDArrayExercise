@@ -21,20 +21,25 @@ public class Main {
     static String pos22 = "   ";
     
     // Setting the final strings for output.
-    static final String POS_MARKER = "███";
-    static final String TABLE_TITLE = "          Item table";
-    static final String COLUMN_INDEX_POINTERS = "           i-0            i-1        i-2";
-    static final String COLUMN_SPECIFIERS = "          | ITEM NUMBER | QUANTITY | PRICE |";
-    static final String HORIZONTAL_LINE = "          ----------------------------------";
+    final static String POS_MARKER = "███";
+    final static String TABLE_TITLE = "          Item table";
+    final static String COLUMN_INDEX_POINTERS = "           i-0            i-1        i-2";
+    final static String COLUMN_SPECIFIERS = "          | ITEM NUMBER | QUANTITY | PRICE |";
+    final static String HORIZONTAL_LINE = "          ----------------------------------";
 
     // Declaring a 2-dimensional array.
-    static final String[][] ITEM_TABLE = new String[][] {
+    final static String[][] ITEM_TABLE = new String[][] {
         {pos00, pos01, pos02},
         {pos10, pos11, pos12},
         {pos20, pos21, pos22}
     };
 
-    public static void main(String[] args) {
+    /**
+     * The starting point of the program.
+     * @param args No arguments are handled.
+     */
+
+    public static void main(String... args) {
         
         // CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! 
         ITEM_TABLE[1][2] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
@@ -44,14 +49,21 @@ public class Main {
 
     }
 
+    /**
+     * Sets the values of the rows on the 'ITEM_TABLE'.
+     */
+
     private static void setRowValues() {
 
         firstRow = String.format("i-0       | %s         | %s      | %s   |", ITEM_TABLE[0][0], ITEM_TABLE[0][1], ITEM_TABLE[0][2]);
-        secondRow = String.format("i-0       | %s         | %s      | %s   |", ITEM_TABLE[1][0], ITEM_TABLE[1][1], ITEM_TABLE[1][2]);
-        thirdRow = String.format("i-0       | %s         | %s      | %s   |", ITEM_TABLE[2][0], ITEM_TABLE[2][1], ITEM_TABLE[2][2]);
+        secondRow = String.format("i-1       | %s         | %s      | %s   |", ITEM_TABLE[1][0], ITEM_TABLE[1][1], ITEM_TABLE[1][2]);
+        thirdRow = String.format("i-2       | %s         | %s      | %s   |", ITEM_TABLE[2][0], ITEM_TABLE[2][1], ITEM_TABLE[2][2]);
     
     }
 
+    /**
+     * Prints the item table.
+     */
     private static void printTable() {
 
         System.out.println(TABLE_TITLE);
