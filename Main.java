@@ -1,10 +1,10 @@
 /**
  * A program to help students visualize the manipulation of a 2dimansional array.
- * 
+ *
  * Credits: Durim Miziraj
  * Buy me a coffee: Swish 0762833335.
  */
-public class Main {    
+public class Main {
 
     // Declaring variables
     private static String firstRow;
@@ -19,7 +19,7 @@ public class Main {
     private static String pos20 = "   ";
     private static String pos21 = "   ";
     private static String pos22 = "   ";
-    
+
     // Setting the final strings for output.
     private final static String POS_MARKER = "███";
     private final static String TABLE_TITLE = "          Item table";
@@ -40,8 +40,8 @@ public class Main {
      */
 
     public static void main(String... args) {
-        
-        // CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! 
+
+        // CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! CHANGE VALUES HERE!!!
         ITEM_TABLE[1][2] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
 
         setRowValues();
@@ -58,12 +58,13 @@ public class Main {
         firstRow = String.format("i-0       | %s         | %s      | %s   |", ITEM_TABLE[0][0], ITEM_TABLE[0][1], ITEM_TABLE[0][2]);
         secondRow = String.format("i-1       | %s         | %s      | %s   |", ITEM_TABLE[1][0], ITEM_TABLE[1][1], ITEM_TABLE[1][2]);
         thirdRow = String.format("i-2       | %s         | %s      | %s   |", ITEM_TABLE[2][0], ITEM_TABLE[2][1], ITEM_TABLE[2][2]);
-    
+
     }
 
     /**
      * Prints the item table.
      */
+
     private static void printTable() {
 
         System.out.println(TABLE_TITLE);
