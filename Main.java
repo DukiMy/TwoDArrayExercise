@@ -4,6 +4,7 @@
  * Credits: Durim Miziraj
  * Buy me a coffee: Swish 0762833335.
  */
+
 public class Main {
 
     // Declaring variables
@@ -42,7 +43,7 @@ public class Main {
     public static void main(String... args) {
 
         // CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! CHANGE VALUES HERE!!!
-        ITEM_TABLE[1][2] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
+        ITEM_TABLE[0][0] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
 
         setRowValues();
         printTable();
