@@ -28,7 +28,7 @@ public class Main {
         };
 
         // CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! CHANGE VALUES HERE!!! 
-        ITEM_TABLE[1][0] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
+        ITEM_TABLE[1][2] = POS_MARKER;    // Anything other than number 0, 1 and 2 will crash the program.
 
         // Setting the final strings for output.
         final  String TABLE_TITLE = "          Item table";
